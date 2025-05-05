@@ -13,15 +13,14 @@ let package = Package(
             targets: ["IRNetworking"]),
     ],
     dependencies: [
-        .package(name: "IRCore", path: "../IRCore"),
+        .package(name: "IRCore", path: "../../IRCore/IRCore"),
     ],
     targets: [
         .target(
             name: "IRNetworking",
             dependencies: [
                 "IRCore"
-            ],
-            path: "IRNetworking"
+            ]
         ),
     ]
 )
